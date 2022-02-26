@@ -1,20 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import uwu from "./assets/5754350.png"; // Tell webpack this JS file uses this image
+import logo_example from "./assets/5754350.png";
+import Element from "./Element";
 
 const App = () => {
   return (
     <div>
       <Wrapper>
-        <Right>
+        <LeftContent>
           {" "}
-          <Uwu src={uwu} />
-        </Right>
-        <Left>
-          <Pedro>Oye</Pedro>
-        </Left>
+          <FullWithImage src={logo_example} />
+        </LeftContent>
+        <RightContent>
+          <Element />
+        </RightContent>
       </Wrapper>
-      <Wrapper2>La influencia Gente de bien¡</Wrapper2>
     </div>
   );
 };
@@ -22,46 +22,27 @@ const App = () => {
 export default App;
 
 const Wrapper = styled.div`
-  min-height: 100vh;
-  width: 100%;
-  padding: 8px;
   display: flex;
-  flex-wrap: wrap;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  padding-left: 10vw;
-  padding-right: 10vw;
-  background-color: lightgreen;
-`;
-
-const Wrapper2 = styled.div`
+  justify-content: space-between;
+  width: 100%;
   min-height: 100vh;
-  width: 100%;
-  background: lightblue;
-  padding: 8px;
+  padding: 10vh 10vw 10vh 10vw;
 `;
 
-const Uwu = styled.img`
-  width: 100%;
-`;
-
-const Pedro = styled.div`
-  background: pink;
-`;
-
-const Right = styled.div`
+const LeftContent = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 35%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: lightgrey;
 `;
 
-const Left = styled.div`
-  width: 60%;
+const RightContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffd580;
-  margin-left: 5%;
+  width: 60%;
+`;
+
+const FullWithImage = styled.img`
+  width: 100%;
 `;
