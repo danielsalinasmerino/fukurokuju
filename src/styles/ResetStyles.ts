@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyles = createGlobalStyle`
+const ResetStyles = createGlobalStyle`
   /*
     1. Use a more-intuitive box-sizing model.
   */
@@ -72,4 +72,4 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-export default GlobalStyles;
+export default ResetStyles;
