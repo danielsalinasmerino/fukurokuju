@@ -25,8 +25,6 @@ const DefaultTemplate: FC<DefaultTemplateProps> = ({
   );
 };
 
-export default DefaultTemplate;
-
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
@@ -66,6 +64,8 @@ const RightContentWrapper = styled.div`
     width: 100%;
   }
 `;
+
+export default DefaultTemplate;
 
 /* 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets

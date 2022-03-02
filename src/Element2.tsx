@@ -1,16 +1,17 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import Typography from "./components/atoms/Typography";
 
 const Element2 = () => {
   const { t } = useTranslation();
 
   return (
     <p>
-      {t("main.content.line1")}
+      <Typography text={t("main.content.line1")} />
       <br />
-      {t("main.content.line2")}
+      <Typography text={t("main.content.line2")} />
       <br />
-      {t("main.content.line3")}
+      <Typography text={t("main.content.line3")} />
     </p>
   );
 };
