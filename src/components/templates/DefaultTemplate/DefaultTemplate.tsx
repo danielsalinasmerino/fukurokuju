@@ -27,7 +27,7 @@ const DefaultTemplate: FC<DefaultTemplateProps> = ({
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   min-height: 100vh;
   padding: 10vh 10vw 10vh 10vw;

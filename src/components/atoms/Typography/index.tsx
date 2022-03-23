@@ -1,3 +1,4 @@
-import Typography from "./Typography";
+import Typography, { TypographyStyle } from "./Typography";
 
 export default Typography;
+export { TypographyStyle };
